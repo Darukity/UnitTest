@@ -10,6 +10,7 @@ class RemoveTaskTest extends TestCase
 {
     public function testRemoveTask()
     {
+        print("Test RemoveTask\n");
         $taskManager = new TaskManager();
         $taskManager->addTask('Lalala');
         $taskManager->removeTask(0);

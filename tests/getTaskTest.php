@@ -6,16 +6,13 @@ use FlowUp\Unitaire\TaskManager;
 use FlowUp\Unitaire\OutOfBoundsException;
 use PHPUnit\Framework\TestCase;
 
-class AddTaskTest extends TestCase
+class GetTaskTest extends TestCase
 {
-    public function testAddTask()
+    public function testGetTask()
     {
-        print("Test AddTask\n");
+        print("Test GetTask\n");
         $taskManager = new TaskManager();
         $taskManager->addTask('Task 1');
-        $this->assertCount(1, $taskManager->getTasks());
         $this->assertEquals('Task 1', $taskManager->getTask(0));
     }
 }
-
-
