@@ -12,6 +12,7 @@ class InvalidIndexThrowsExceptionTest extends TestCase
     {
         print("Test RemoveInvalidIndexThrowsException on remove\n");
         $this->expectException(\OutOfBoundsException::class);
+        $this->expectExceptionMessage("Index de tâche invalide: 0");
         $taskManager = new TaskManager();
         $taskManager->removeTask(0);
     }
@@ -20,6 +21,7 @@ class InvalidIndexThrowsExceptionTest extends TestCase
     {
         print("Test RemoveInvalidIndexThrowsException on getTask\n");
         $this->expectException(\OutOfBoundsException::class);
+        $this->expectExceptionMessage("Index de tâche invalide: 0");
         $taskManager = new TaskManager();
         $taskManager->getTask(0);
     }
