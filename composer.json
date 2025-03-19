@@ -1,0 +1,18 @@
+{
+    "name": "flow-up/unitaire",
+    "require-dev": {
+        "phpunit/phpunit": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FlowUp\\Unitaire\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Darukity",
+            "email": "samchgaming@gmail.com"
+        }
+    ],
+    "require": {}
+}
